@@ -19,3 +19,7 @@ Route::middleware([
 Route::get('/list-movies',function(){
     return view('list-movie');
 })->name('list-movies');
+
+Route::get('/list-movies/{movie_id}',function(){
+    return view('Editpage');
+})->name('edit');
