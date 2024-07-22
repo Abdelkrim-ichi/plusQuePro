@@ -15,3 +15,7 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+Route::get('/list-movies',function(){
+    return view('list-movie');
+})->name('list-movies');
