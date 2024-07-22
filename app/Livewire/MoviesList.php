@@ -90,4 +90,14 @@ class MoviesList extends Component
                 return $data;
         }
     }
+
+    public function delete($movieId)
+    {
+        $movie = Movie::find($movieId);
+
+        try {
+            $movie->delete();
+        } catch (\Exception $e) {
+        }
+    }
 }
