@@ -61,3 +61,9 @@
     }
 </style>
 
+<script>
+    window.addEventListener('flash-message', event => {
+        const { type, message } = event.detail;
+        alert(`${type}: ${message}`);
+    });
+</script>
